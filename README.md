@@ -1,44 +1,43 @@
-\# Shoulder Press Pose Tracker (MediaPipe + OpenCV)
+# Shoulder Press Pose Tracker (MediaPipe + OpenCV)
 
+Real-time shoulder press form tracker built in Python using **MediaPipe Pose** and **OpenCV**.  
+Tracks both arms live, counts reps, and logs session metrics to a CSV file.
 
+---
 
-A real-time shoulder press form tracker built in Python using \*\*MediaPipe Pose\*\* and \*\*OpenCV\*\*.
+## Features
+- Live left/right elbow angle detection
+- Rep counting per arm
+- Tracks **ROM (range of motion)**, **TUT (time under tension)**, and **tempo (deg/sec)**
+- Flags common form issues: **asymmetry**, **low ROM**, **incomplete lockout**, **tempo too fast/slow**
+- Saves a session summary to: `data/shoulder_press_log.csv`
 
+---
 
+## Demo
 
-\## Features
+> Screenshot:
 
-\- Detects left/right elbow angles live
+![Demo Screenshot](media/demo_screenshot.png)
 
-\- Counts reps for each arm
+---
 
-\- Tracks ROM (range of motion), TUT (time under tension), and tempo (deg/sec)
+## Tech Stack
+- Python
+- MediaPipe Pose
+- OpenCV
+- NumPy, Pandas
 
-\- Flags asymmetry + form issues (ROM/lockout/tempo)
+---
 
-\- Saves a session summary to a CSV file (`data/shoulder\_press\_log.csv`)
+## Requirements
+- Python **3.9+** recommended
+- Webcam
 
+---
 
+## Setup & Run
 
-\## Demo
-
-!\[Demo Screenshot](media/demo\_screenshot.png)
-
-
-
-
-
-\## Requirements
-
-\- Python 3.9+ recommended
-
-\- Webcam
-
-
-
-\## Setup
-
+1) Install dependencies:
 ```bash
-
 pip install -r requirements.txt
-
